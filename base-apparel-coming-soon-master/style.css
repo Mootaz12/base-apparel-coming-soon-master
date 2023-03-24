@@ -1,0 +1,90 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 100px;
+  gap: 40px;
+}
+main {
+  display: flex;
+  width: 90%;
+  height: fit-content;
+}
+.first-section {
+  background-image: url(/images/bg-pattern-desktop.svg);
+  background-repeat: no-repeat;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 60%;
+  padding: 50px;
+}
+.logo {
+  margin-bottom: 60px;
+}
+h1 {
+  font-size: 2.5rem;
+  letter-spacing: 5px;
+  max-width: 40%;
+  font-weight: 700;
+}
+h1 > span {
+  color: rgb(216, 192, 195);
+  font-weight: 500;
+}
+.first-section > p {
+  font-size: 0.8rem;
+  color: rgb(216, 192, 195);
+}
+form {
+  position: relative;
+}
+#email,
+#email:active,
+#email:focus {
+  border: solid 1px rgb(235, 229, 229);
+  border-radius: 10px;
+  width: 100%;
+  color: black;
+  padding: 13px;
+}
+.input-err {
+  background-image: url(/images/icon-error.svg);
+  background-repeat: no-repeat;
+  background-position: 85%;
+  border: solid 1px rgb(227, 119, 117);
+}
+button {
+  position: absolute;
+  top: 0;
+  left: 90%;
+  padding: 10px 25px;
+  background-color: rgb(241, 155, 156);
+  border-radius: 20px;
+  border: 0;
+}
+button:hover,
+button:focus,
+button:active {
+  cursor: pointer;
+  background-color: rgb(247, 203, 204);
+}
+.err-msg {
+  color: rgb(216, 192, 195);
+  font-size: 0.8rem;
+}
+.second-section {
+  width: 40%;
+}
